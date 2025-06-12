@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>分类</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <div class="h-6"></div>
+  <div class="text-center text-lg font-bold py-2">分类</div>
+  <div class="flex h-[calc(100vh-80px)]">
+    <!-- 左侧导航 -->
+    <div class="w-24 bg-white border-r flex flex-col">
+      <button class="py-3 text-gray-500 hover:bg-gray-100">品牌推荐</button>
+      <button class="py-3 text-red-500 font-bold bg-red-50">男子系列</button>
+      <button class="py-3 text-gray-500 hover:bg-gray-100">家居家具</button>
+      <button class="py-3 text-gray-500 hover:bg-gray-100">时尚女装</button>
+      <button class="py-3 text-gray-500 hover:bg-gray-100">益智玩具</button>
+      <button class="py-3 text-gray-500 hover:bg-gray-100">日用百货</button>
+    </div>
+    <!-- 右侧内容 -->
+    <div class="flex-1 p-4 overflow-y-auto">
+      <div class="mb-4">
+        <input type="text" class="w-full rounded-full bg-gray-100 px-4 py-2 text-sm focus:outline-none" placeholder="请输入关键词" />
+      </div>
+      <img src="https://img.zcool.cn/community/01b2e95d7e2e2aa801216518a2e2e2.jpg@1280w_1l_2o_100sh.jpg" alt="banner" class="rounded-xl w-full h-24 object-cover mb-4" />
+      <div class="mb-4">
+        <div class="font-bold mb-2">鞋类</div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-white rounded-xl p-2 flex flex-col items-center">
+            <img src="https://img14.360buyimg.com/n7/jfs/t1/181679/18/39293/180858/65e6e2e2Ff1e2e2e2.jpg" alt="休闲鞋" class="rounded-lg w-20 h-20 object-cover" />
+            <span class="mt-1">休闲鞋</span>
+          </div>
+          <div class="bg-white rounded-xl p-2 flex flex-col items-center">
+            <img src="https://img14.360buyimg.com/n7/jfs/t1/112345/1/12345/123456/5e8c1e2aNf1e2e2e2.jpg" alt="运动鞋" class="rounded-lg w-20 h-20 object-cover" />
+            <span class="mt-1">运动鞋</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="font-bold mb-2">服装</div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-white rounded-xl p-2 flex flex-col items-center">
+            <img src="https://img10.360buyimg.com/n7/jfs/t1/123456/1/12345/123456/5e8c1e2aNf1e2e2e2.jpg" alt="运动T恤" class="rounded-lg w-20 h-20 object-cover" />
+            <span class="mt-1">运动T恤</span>
+          </div>
+          <div class="bg-white rounded-xl p-2 flex flex-col items-center">
+            <img src="https://img10.360buyimg.com/n7/jfs/t1/234567/1/12345/123456/5e8c1e2aNf1e2e2e2.jpg" alt="外套" class="rounded-lg w-20 h-20 object-cover" />
+            <span class="mt-1">外套</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 底部导航 -->
+  <div class="fixed bottom-0 left-0 w-full bg-white border-t flex justify-around items-center h-14">
+    <div class="flex flex-col items-center text-gray-400"><i class="fa-solid fa-house text-xl"></i><span class="text-xs">首页</span></div>
+    <div class="flex flex-col items-center text-red-500"><i class="fa-solid fa-th-large text-xl"></i><span class="text-xs">分类</span></div>
+    <div class="flex flex-col items-center text-gray-400"><i class="fa-solid fa-cart-shopping text-xl"></i><span class="text-xs">购物车</span></div>
+    <div class="flex flex-col items-center text-gray-400"><i class="fa-regular fa-user text-xl"></i><span class="text-xs">我的</span></div>
+  </div>
+</body>
+</html> 

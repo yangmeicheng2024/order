@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>原型预览</title>
+  <style>
+    body {
+      background: #f3f4f6;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    .scroll-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    .proto-item {
+      flex-shrink: 0;
+      text-align: center;
+    }
+
+    .proto-title {
+      font-size: 1.1rem;
+      color: #333;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .proto-frame {
+      width: 375px;
+      height: 812px;
+      border: 1px solid #e5e7eb;
+      border-radius: 1rem;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+  </style>
+</head>
+<body>
+  <div class="scroll-container">
+    <div class="proto-item">
+      <div class="proto-title">首页</div>
+      <iframe class="proto-frame" src="proto/home.html"></iframe>
+    </div>
+    <div class="proto-item">
+      <div class="proto-title">分类</div>
+      <iframe class="proto-frame" src="proto/category.html"></iframe>
+    </div>
+    <div class="proto-item">
+      <div class="proto-title">商品详情</div>
+      <iframe class="proto-frame" src="proto/product-detail.html"></iframe>
+    </div>
+    <div class="proto-item">
+      <div class="proto-title">规格选择弹窗</div>
+      <iframe class="proto-frame" src="proto/sku-popup.html"></iframe>
+    </div>
+    <div class="proto-item">
+      <div class="proto-title">确认订单</div>
+      <iframe class="proto-frame" src="proto/order-confirm.html"></iframe>
+    </div>
+  </div>
+</body>
+</html>

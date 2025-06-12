@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>确认订单</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 min-h-screen pb-20">
+  <div class="h-6"></div>
+  <div class="flex items-center justify-between px-4 py-2">
+    <i class="fa-solid fa-chevron-left text-xl"></i>
+    <div class="text-lg font-bold flex-1 text-center -ml-6">确认订单</div>
+    <div class="flex items-center space-x-3">
+      <i class="fa-solid fa-ellipsis text-xl"></i>
+      <i class="fa-regular fa-dot-circle text-xl"></i>
+    </div>
+  </div>
+  <!-- 配送方式 -->
+  <div class="bg-white rounded-xl mx-4 mt-2 p-4 flex items-center justify-between">
+    <div class="flex-1 flex">
+      <button class="text-red-500 font-bold border-b-2 border-red-500 pb-1 mr-4">快递配送</button>
+      <button class="text-gray-500">门店自提</button>
+    </div>
+  </div>
+  <!-- 收货人信息 -->
+  <div class="bg-white rounded-xl mx-4 mt-2 p-4 flex items-center justify-between">
+    <div>
+      <div class="font-bold">The 13754283825</div>
+      <div class="text-gray-500 text-sm flex items-center"><i class="fa-solid fa-location-dot mr-1"></i>北京市北京市东城区The</div>
+    </div>
+    <i class="fa-solid fa-chevron-right text-gray-400"></i>
+  </div>
+  <!-- 商品信息 -->
+  <div class="bg-white rounded-xl mx-4 mt-2 p-4 flex">
+    <img src="https://img14.360buyimg.com/n7/jfs/t1/181679/18/39293/180858/65e6e2e2Ff1e2e2e2.jpg" alt="商品缩略图" class="w-20 h-20 rounded-xl object-cover mr-4" />
+    <div class="flex-1">
+      <div class="font-bold text-sm">安踏板鞋男鞋2021新款夏季官方旗舰休闲潮流运动小白鞋子白板鞋</div>
+      <div class="text-xs text-gray-400 mt-1">36</div>
+      <div class="bg-yellow-100 text-yellow-800 rounded px-2 py-1 text-xs font-bold inline-block mt-1">会员价 ¥350.55</div>
+    </div>
+    <div class="flex flex-col items-end justify-between">
+      <span class="text-gray-400">x1</span>
+    </div>
+  </div>
+  <!-- 买家留言 -->
+  <div class="bg-white rounded-xl mx-4 mt-2 p-4">
+    <div class="text-gray-500 text-sm mb-2">买家留言</div>
+    <input type="text" class="w-full rounded bg-gray-100 px-4 py-2 text-sm focus:outline-none" placeholder="请添加备注（150字以内）" />
+  </div>
+  <!-- 优惠券/积分 -->
+  <div class="bg-white rounded-xl mx-4 mt-2 p-4 flex items-center justify-between">
+    <div>
+      <div class="text-gray-500 text-sm">优惠券</div>
+      <div class="text-gray-500 text-xs">积分抵扣 共50积分 <i class="fa-regular fa-circle-question"></i></div>
+    </div>
+    <div class="flex items-center">
+      <span class="text-red-500 mr-2">1张可用</span>
+      <i class="fa-solid fa-chevron-right text-gray-400"></i>
+      <input type="checkbox" class="ml-4 w-5 h-5 rounded border-gray-300" />
+    </div>
+  </div>
+  <!-- 金额明细 -->
+  <div class="bg-white rounded-xl mx-4 mt-2 p-4">
+    <div class="flex justify-between text-sm mb-2"><span>商品金额</span><span>¥350.55</span></div>
+    <div class="flex justify-between text-sm"><span>运费</span><span>¥2</span></div>
+  </div>
+  <!-- 底部栏 -->
+  <div class="fixed bottom-0 left-0 w-full bg-white border-t flex items-center h-16 px-4 z-10">
+    <div class="flex-1 text-red-500 font-bold text-lg">合计：¥352.55</div>
+    <button class="bg-red-500 text-white rounded-full px-8 py-2 font-bold text-lg ml-2 shadow active:scale-95 transition-transform">提交订单</button>
+  </div>
+</body>
+</html> 

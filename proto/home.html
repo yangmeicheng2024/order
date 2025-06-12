@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-pink-50 min-h-screen">
+  <!-- 顶部状态栏模拟 -->
+  <div class="h-6"></div>
+  <!-- 搜索栏 -->
+  <div class="flex items-center px-4 py-2">
+    <img src="https://img.alicdn.com/imgextra/i2/2200704180017/O1CN01Qw1QwK1w1Qw1Qw1Qw_!!2200704180017.jpg" alt="logo" class="w-8 h-8 mr-2 rounded" />
+    <div class="flex-1 relative">
+      <input type="text" class="w-full rounded-full bg-white px-4 py-2 text-sm focus:outline-none" placeholder="请输入关键词" />
+      <i class="fa-solid fa-magnifying-glass absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+    </div>
+    <i class="fa-regular fa-comment-dots text-2xl ml-3 text-gray-400"></i>
+  </div>
+  <!-- banner -->
+  <div class="px-4">
+    <img src="https://img.zcool.cn/community/01b2e95d7e2e2aa801216518a2e2e2.jpg@1280w_1l_2o_100sh.jpg" alt="banner" class="rounded-xl w-full h-28 object-cover" />
+  </div>
+  <!-- 功能区 -->
+  <div class="grid grid-cols-5 gap-2 px-4 mt-4">
+    <div class="flex flex-col items-center"><div class="bg-orange-100 rounded-full w-12 h-12 flex items-center justify-center"><i class="fa-solid fa-tag text-orange-500 text-xl"></i></div><span class="text-xs mt-1">砍价活动</span></div>
+    <div class="flex flex-col items-center"><div class="bg-cyan-100 rounded-full w-12 h-12 flex items-center justify-center"><i class="fa-solid fa-users text-cyan-500 text-xl"></i></div><span class="text-xs mt-1">拼团活动</span></div>
+    <div class="flex flex-col items-center"><div class="bg-pink-100 rounded-full w-12 h-12 flex items-center justify-center"><i class="fa-regular fa-clock text-pink-500 text-xl"></i></div><span class="text-xs mt-1">限时秒杀</span></div>
+    <div class="flex flex-col items-center"><div class="bg-red-100 rounded-full w-12 h-12 flex items-center justify-center"><i class="fa-solid fa-fire text-red-500 text-xl"></i></div><span class="text-xs mt-1">热销榜单</span></div>
+    <div class="flex flex-col items-center"><div class="bg-orange-100 rounded-full w-12 h-12 flex items-center justify-center"><i class="fa-solid fa-ticket text-orange-500 text-xl"></i></div><span class="text-xs mt-1">领券中心</span></div>
+    <div class="flex flex-col items-center"><div class="bg-yellow-100 rounded-full w-12 h-12 flex items-center justify-center"><i class="fa-regular fa-calendar-check text-yellow-500 text-xl"></i></div><span class="text-xs mt-1">积分签到</span></div>
+    <div class="flex flex-col items-center"><div class="bg-pink-100 rounded-full w-12 h-12 flex items-center justify-center"><i class="fa-solid fa-gift text-pink-500 text-xl"></i></div><span class="text-xs mt-1">积分抽奖</span></div>
+    <div class="flex flex-col items-center"><div class="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center"><i class="fa-solid fa-tv text-blue-500 text-xl"></i></div><span class="text-xs mt-1">商城直播</span></div>
+    <div class="flex flex-col items-center"><div class="bg-cyan-100 rounded-full w-12 h-12 flex items-center justify-center"><i class="fa-solid fa-code-branch text-cyan-500 text-xl"></i></div><span class="text-xs mt-1">admin开源</span></div>
+    <div class="flex flex-col items-center"><div class="bg-green-100 rounded-full w-12 h-12 flex items-center justify-center"><i class="fa-regular fa-circle-question text-green-500 text-xl"></i></div><span class="text-xs mt-1">帮助中心</span></div>
+  </div>
+  <!-- 商城头条 -->
+  <div class="px-4 mt-4">
+    <div class="flex items-center text-sm">
+      <span class="font-bold text-red-500 mr-2">商城头条</span>
+      <span class="text-gray-500">双12活动预告~~~</span>
+    </div>
+  </div>
+  <!-- 商品推荐 -->
+  <div class="px-4 mt-4 grid grid-cols-2 gap-4">
+    <div class="bg-white rounded-xl p-2">
+      <img src="https://img14.360buyimg.com/n7/jfs/t1/181679/18/39293/180858/65e6e2e2Ff1e2e2e2.jpg" alt="商品1" class="rounded-lg w-full h-28 object-cover" />
+      <div class="mt-2 text-sm font-bold">iQOO5 5G</div>
+      <div class="text-xs text-gray-400">120Hz超视感柔性屏/变焦三摄</div>
+      <div class="text-red-500 font-bold mt-1">¥3998</div>
+    </div>
+    <div class="bg-white rounded-xl p-2">
+      <img src="https://img14.360buyimg.com/n7/jfs/t1/112345/1/12345/123456/5e8c1e2aNf1e2e2e2.jpg" alt="商品2" class="rounded-lg w-full h-28 object-cover" />
+      <div class="mt-2 text-sm font-bold">618 发现好货</div>
+      <div class="text-xs text-gray-400">活动直降千元</div>
+      <div class="text-red-500 font-bold mt-1">¥618</div>
+    </div>
+  </div>
+  <!-- 底部导航 -->
+  <div class="fixed bottom-0 left-0 w-full bg-white border-t flex justify-around items-center h-14">
+    <div class="flex flex-col items-center text-red-500"><i class="fa-solid fa-house text-xl"></i><span class="text-xs">首页</span></div>
+    <div class="flex flex-col items-center text-gray-400"><i class="fa-solid fa-th-large text-xl"></i><span class="text-xs">分类</span></div>
+    <div class="flex flex-col items-center text-gray-400"><i class="fa-solid fa-cart-shopping text-xl"></i><span class="text-xs">购物车</span></div>
+    <div class="flex flex-col items-center text-gray-400"><i class="fa-regular fa-user text-xl"></i><span class="text-xs">我的</span></div>
+  </div>
+</body>
+</html> 

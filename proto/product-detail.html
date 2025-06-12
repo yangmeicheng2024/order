@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品详情</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <div class="h-6"></div>
+  <div class="flex items-center justify-between px-4 py-2">
+    <div class="flex items-center">
+      <i class="fa-solid fa-chevron-left text-xl"></i>
+      <i class="fa-solid fa-bars text-xl ml-2"></i>
+    </div>
+    <div class="text-lg font-bold flex-1 text-center -ml-10">商品详情</div>
+    <div class="flex items-center space-x-3">
+      <i class="fa-solid fa-ellipsis text-xl"></i>
+      <i class="fa-regular fa-dot-circle text-xl"></i>
+    </div>
+  </div>
+  <!-- 商品大图 -->
+  <div class="px-4">
+    <img src="https://img14.360buyimg.com/n7/jfs/t1/181679/18/39293/180858/65e6e2e2Ff1e2e2e2.jpg" alt="商品大图" class="rounded-xl w-full h-48 object-cover" />
+  </div>
+  <div class="px-4 mt-2">
+    <div class="text-lg font-bold">ANTA FOOTSHOES</div>
+  </div>
+  <div class="px-4 mt-2 flex items-center text-sm text-gray-500">
+    <span>已选 36</span>
+    <span class="mx-2">|</span>
+    <span>保障 7天无理由退还 · 退换货政策 · 售后服务</span>
+  </div>
+  <!-- 猜你喜欢 -->
+  <div class="px-4 mt-4">
+    <div class="flex items-center mb-2">
+      <i class="fa-solid fa-heart text-red-500 mr-2"></i>
+      <span class="font-bold">猜你喜欢</span>
+      <div class="flex-1 border-b border-gray-200 ml-2"></div>
+    </div>
+    <div class="grid grid-cols-3 gap-2">
+      <div class="bg-white rounded-xl p-2 flex flex-col items-center">
+        <img src="https://img12.360buyimg.com/n7/jfs/t1/123456/1/12345/123456/5e8c1e2aNf1e2e2e2.jpg" alt="商品1" class="rounded-lg w-20 h-20 object-cover" />
+        <span class="mt-1 text-xs text-gray-700">被子加厚冬被芯...</span>
+        <span class="text-red-500 text-xs">¥7.8 <span class="line-through text-gray-400">¥99</span></span>
+      </div>
+      <div class="bg-white rounded-xl p-2 flex flex-col items-center">
+        <img src="https://img12.360buyimg.com/n7/jfs/t1/234567/1/12345/123456/5e8c1e2aNf1e2e2e2.jpg" alt="商品2" class="rounded-lg w-20 h-20 object-cover" />
+        <span class="mt-1 text-xs text-gray-700">网红芦荟棉被单...</span>
+        <span class="text-red-500 text-xs">¥11 <span class="line-through text-gray-400">¥41</span></span>
+      </div>
+      <div class="bg-white rounded-xl p-2 flex flex-col items-center">
+        <img src="https://img12.360buyimg.com/n7/jfs/t1/345678/1/12345/123456/5e8c1e2aNf1e2e2e2.jpg" alt="商品3" class="rounded-lg w-20 h-20 object-cover" />
+        <span class="mt-1 text-xs text-gray-700">野蛮娃娃红点奖...</span>
+        <span class="text-red-500 text-xs">¥399 <span class="line-through text-gray-400">¥699</span></span>
+      </div>
+    </div>
+  </div>
+  <!-- 商品详情参数 -->
+  <div class="px-4 mt-4">
+    <div class="font-bold mb-2">商品详情</div>
+    <ul class="text-sm text-gray-700 list-disc pl-5">
+      <li>品牌名称：ANTA/安踏</li>
+      <li>品牌：ANTA/安踏</li>
+      <li>功能：防滑 耐磨 平衡 透气 支撑</li>
+      <li>闭合方式：系带</li>
+      <li>鞋码：39 40.5 41 42 42.5 43 44.5</li>
+      <li>小白鞋</li>
+      <li>配色：象牙白/黄橙-5 象牙白/海藻绿-7 ...</li>
+    </ul>
+  </div>
+  <!-- 悬浮分享 -->
+  <div class="fixed left-4 bottom-24 z-10">
+    <div class="bg-red-100 rounded-xl px-3 py-2 flex flex-col items-center shadow">
+      <span class="text-lg font-bold text-red-500">110.7元</span>
+      <span class="text-xs text-gray-500">好友下单最高可赚</span>
+      <button class="bg-red-500 text-white rounded-full px-4 py-1 mt-1 text-xs">转发分享</button>
+    </div>
+  </div>
+  <!-- 底部操作栏 -->
+  <div class="fixed bottom-0 left-0 w-full bg-white border-t flex items-center h-14 px-4">
+    <div class="flex-1 flex items-center space-x-6">
+      <div class="flex flex-col items-center text-gray-400"><i class="fa-regular fa-comments text-xl"></i><span class="text-xs">客服</span></div>
+      <div class="flex flex-col items-center text-gray-400"><i class="fa-solid fa-cart-shopping text-xl"></i><span class="text-xs">购物车</span></div>
+    </div>
+    <button class="bg-yellow-400 text-white rounded-full px-6 py-2 font-bold ml-2">加入购物车</button>
+    <button class="bg-red-500 text-white rounded-full px-6 py-2 font-bold ml-2">立即购买</button>
+  </div>
+</body>
+</html> 
